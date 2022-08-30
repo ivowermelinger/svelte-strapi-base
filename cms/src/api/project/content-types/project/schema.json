@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Projekt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "lead": {
+      "type": "string",
+      "required": true
+    },
+    "meta": {
+      "displayName": "Meta Data",
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta-data"
+    },
+    "tags": {
+      "type": "string"
+    }
+  }
+}

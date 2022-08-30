@@ -1,0 +1,11 @@
+.text {
+  &__title {
+    font-family: $font-base;
+    font-weight: 600;
+  }
+
+  &__paragraph {
+    font-family: $font-base;
+    font-weight: 300;
+  }
+}

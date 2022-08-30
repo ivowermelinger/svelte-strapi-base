@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_seo_meta_data",
+  "info": {
+    "displayName": "Meta Data",
+    "icon": "search-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "required": false
+    },
+    "metaDescription": {
+      "type": "string"
+    },
+    "ogImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
