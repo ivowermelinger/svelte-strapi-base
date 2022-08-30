@@ -31,6 +31,13 @@
     },
     "tags": {
       "type": "string"
+    },
+    "previewImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

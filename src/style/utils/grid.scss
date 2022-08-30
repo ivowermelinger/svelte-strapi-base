@@ -1,0 +1,29 @@
+@import '@hi_digital/easy-flex';
+
+// Gutter width - vertical space
+@include easy-flex-breakpoint('tiny', 480px, 0px, 10px);
+@include easy-flex-breakpoint('small', 768px, 0px, 10px);
+@include easy-flex-breakpoint('medium', 1024px, 0px, 20px);
+@include easy-flex-breakpoint('large', 1200px, 0px, 20px);
+@include easy-flex-breakpoint('huge', 1440px, 0px, 40px);
+@include easy-flex-breakpoint('full', 1680px, 0px, 40px);
+
+@include create-easy-flex((
+        columns: 24,
+        container-width: 100%,
+        container-max-width: 1680px,
+        gutter-width: 0px,
+        vertical-space: 10px,
+));
+
+@include easy-add-class(tac) {
+    text-align: center;
+}
+
+@include easy-add-class(tal) {
+    text-align: left;
+}
+
+@include easy-add-class(tar) {
+    text-align: right;
+}

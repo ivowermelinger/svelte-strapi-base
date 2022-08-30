@@ -1,11 +1,11 @@
 // Utils
-@import "normalize.css", "utils/variables";
+@import "normalize.css", "utils/variables", "utils/grid";
 
 // Base imports
 @import "base/hacks", "base/fonts", "base/text";
 
 // Layout
-@import "layout/footer";
+@import "layout/body", "layout/footer";
 
 // Components
 @import "components/project";
