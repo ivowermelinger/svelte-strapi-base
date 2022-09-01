@@ -17,7 +17,8 @@
       "required": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
     },
     "lead": {
       "type": "string",
@@ -33,11 +34,12 @@
       "type": "string"
     },
     "previewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

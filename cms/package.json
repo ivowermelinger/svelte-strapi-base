@@ -14,7 +14,8 @@
     "@strapi/plugin-users-permissions": "4.1.9",
     "@strapi/strapi": "4.3.6",
     "better-sqlite3": "7.4.6",
-    "strapi-plugin-local-image-sharp": "^1.2.0"
+    "strapi-plugin-local-image-sharp": "^1.2.0",
+    "strapi-plugin-menus": "^1.0.2"
   },
   "author": {
     "name": "A Strapi developer"
