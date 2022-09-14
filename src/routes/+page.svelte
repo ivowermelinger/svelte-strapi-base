@@ -1,6 +1,13 @@
 <svelte:head>
-    <title>Start</title>
+    <title>Start Dev</title>
     <meta name="description" content="Svelte demo app"/>
 </svelte:head>
 
-<h1>Start</h1>
+<div class="container">
+    <div class="row">
+        <div class="gr-24">
+            <h1>Start Dev</h1>
+        </div>
+    </div>
+</div>
+

@@ -4,11 +4,13 @@
 	"scripts": {
 		"dev": "concurrently vite dev & npm run cms",
 		"cms": "cd cms && npm run develop",
+		"cms-start": "cd cms && npm run start",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"start": "concurrently vite prewview & npm run cms-start"
 	},
 	"devDependencies": {
 		"@hi_digital/easy-flex": "^1.6.4",
