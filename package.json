@@ -5,11 +5,13 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "dev": "concurrently 'npm run develop' 'cd frontend && npm run dev'",
-    "start": "strapi start",
-    "build": "strapi build",
+    "dev": "concurrently 'strapi develop' 'cd frontend && npm run dev'",
+    "start": "pm2 start process.json",
+    "stop": "pm2 stop process.json",
+    "build": "concurrently 'strapi build' 'cd frontend && npm run build'",
     "build-production": "concurrently 'NODE_ENV=production strapi build' 'cd frontend && NODE_ENV=production npm run build'",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "clean" : "concurrently 'rm -rf build' 'cd frontend && rm -rf build'"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "^4.3.8",
