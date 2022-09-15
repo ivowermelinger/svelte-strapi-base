@@ -1,6 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
 import preprocess from 'svelte-preprocess';
-
+import adapter from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,7 +8,6 @@ const config = {
             prependData: `@import './src/style/app.scss';`
         },
     }),
-
     kit: {
         adapter: adapter(),
 
@@ -18,7 +16,7 @@ const config = {
             allowed: ['PATCH', 'DELETE']
         },
         env: {
-            publicPrefix: 'PUBLIC_'
+            publicPrefix: 'PUBLIC_',
         }
     },
 };

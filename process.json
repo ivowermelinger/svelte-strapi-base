@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "name": "frontend",
+      "script": "./build/index.js",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 80
+      }
+    },
+    {
+      "name": "cms",
+      "script": "./cms/server.js",
+      "cwd": "./cms",
+      "env": {
+        "NODE_ENV": "production",
+        "HOST": "127.0.0.1",
+        "PORT": 1337
+      }
+    }
+  ]
+}
