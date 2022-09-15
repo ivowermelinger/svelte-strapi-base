@@ -7,7 +7,7 @@
   &__row {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
 
     @include respond-to(small) {
       grid-template-columns: 1fr 1fr;
@@ -15,12 +15,8 @@
 
     @include respond-to(medium) {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 20px;
     }
 
-    @include respond-to(huge) {
-      grid-gap: 40px;
-    }
   }
 
   // Project overview

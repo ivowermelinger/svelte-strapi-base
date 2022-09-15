@@ -1,0 +1,22 @@
+.placeholder {
+  background: #1a1919;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__wrapper {
+    color: #fff;
+  }
+
+  &__title {
+    @extend .text__title;
+    @include responsive-font(6.4vw, 42px, 80px, 64px);
+  }
+
+  &__text {
+    @extend .text__title;
+  }
+}

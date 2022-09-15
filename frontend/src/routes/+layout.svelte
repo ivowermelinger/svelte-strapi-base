@@ -1,16 +1,23 @@
 <script>
-    import 'lazysizes';
-    import Header from "$lib/Header.svelte";
-    import Footer from "$lib/Footer.svelte";
+  import {PUBLIC_SHOW_PLACEHOLER} from '$env/static/public';
+
+  const showPlaceholder = PUBLIC_SHOW_PLACEHOLER === 'true';
+  import 'lazysizes';
+  import Header from "$lib/Header.svelte";
+  import Footer from "$lib/Footer.svelte";
 </script>
 
-<Header/>
+{#if !showPlaceholder}
+  <Header/>
+{/if}
 
 <main>
-    <slot/>
+  <slot/>
 </main>
 
-<Footer/>
+{#if !showPlaceholder}
+  <Footer/>
+{/if}
 
 <!-- scss global style in src/styles/app.scss -->
 <style lang="scss" global>
