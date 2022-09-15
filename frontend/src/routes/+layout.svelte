@@ -1,10 +1,21 @@
 <script>
+  import 'lazysizes';
+  import Aos from 'aos';
+
   import {PUBLIC_SHOW_PLACEHOLER} from '$env/static/public';
 
-  const showPlaceholder = PUBLIC_SHOW_PLACEHOLER === 'true';
-  import 'lazysizes';
   import Header from "$lib/Header.svelte";
   import Footer from "$lib/Footer.svelte";
+  import {onMount} from "svelte";
+
+  const showPlaceholder = PUBLIC_SHOW_PLACEHOLER === 'true';
+
+  onMount(() => {
+    Aos.init({
+      once: false,
+    });
+  });
+
 </script>
 
 {#if !showPlaceholder}
