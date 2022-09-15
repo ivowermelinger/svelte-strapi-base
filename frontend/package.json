@@ -2,16 +2,13 @@
 	"name": "svelte-kit",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "concurrently vite dev",
-		"cms": "cd cms && npm run develop",
-		"cms-start": "cd cms && npm run start",
-		"cms-build": "cd cms && NODE_ENV=production npm run build",
-		"build": "vite build && npm run cms-build",
-		"preview": "concurrently vite prewview & npm run cms-start",
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite prewview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "eslint .",
-		"start": "concurrently vite prewview & npm run cms-start"
+		"start": "vite start"
 	},
 	"devDependencies": {
 		"@hi_digital/easy-flex": "^1.6.4",
@@ -26,14 +23,13 @@
 		"svelte-check": "^2.7.1",
 		"svelte-preprocess": "^4.10.7",
 		"typescript": "^4.7.4",
-		"vite": "^3.1.0-beta.1"
+		"vite": "^3.1.0-beta.1",
+		"normalize.css": "^8.0.1"
 	},
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
-		"concurrently": "^7.3.0",
 		"cookie": "^0.4.1",
-		"lazysizes": "^5.3.2",
-		"normalize.css": "^8.0.1"
+		"lazysizes": "^5.3.2"
 	}
 }

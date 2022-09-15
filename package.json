@@ -5,8 +5,10 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
+    "dev": "concurrently 'npm run develop' 'cd frontend && npm run dev'",
     "start": "strapi start",
     "build": "strapi build",
+    "build-production": "concurrently 'NODE_ENV=production strapi build' 'cd frontend && NODE_ENV=production npm run build'",
     "strapi": "strapi"
   },
   "dependencies": {
@@ -20,7 +22,7 @@
   "author": {
     "name": "A Strapi developer"
   },
-  "main" : "src/index.js",
+  "main": "src/index.js",
   "strapi": {
     "uuid": "b05780eb-e311-44bd-bb4f-5dcec43928e5"
   },
@@ -28,5 +30,8 @@
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
 }
