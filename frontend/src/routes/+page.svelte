@@ -1,8 +1,8 @@
 <script>
-  import {PUBLIC_SHOW_PLACEHOLER} from '$env/static/public';
+  import {dev} from '$app/environment'
+  import ProjectGrid from "$lib/ProjectGrid.svelte";
 
-  const showPlaceholder = PUBLIC_SHOW_PLACEHOLER === 'true';
-
+  export let data;
 </script>
 
 <svelte:head>
@@ -10,7 +10,7 @@
   <meta name="description" content="Svelte demo app"/>
 </svelte:head>
 
-{#if showPlaceholder}
+{#if !dev}
 
   <div class="placeholder">
     <div class="container">
@@ -33,4 +33,6 @@
       </div>
     </div>
   </div>
+
+  <ProjectGrid data="{data}"/>
 {/if}

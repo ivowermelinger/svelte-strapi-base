@@ -1,14 +1,11 @@
 <script>
   import 'lazysizes';
   import Aos from 'aos';
-
-  import {PUBLIC_SHOW_PLACEHOLER} from '$env/static/public';
+  import {dev} from '$app/environment'
 
   import Header from "$lib/Header.svelte";
   import Footer from "$lib/Footer.svelte";
   import {onMount} from "svelte";
-
-  const showPlaceholder = PUBLIC_SHOW_PLACEHOLER === 'true';
 
   onMount(() => {
     Aos.init({
@@ -16,9 +13,10 @@
     });
   });
 
+
 </script>
 
-{#if !showPlaceholder}
+{#if dev}
   <Header/>
 {/if}
 
@@ -26,7 +24,7 @@
   <slot/>
 </main>
 
-{#if !showPlaceholder}
+{#if dev}
   <Footer/>
 {/if}
 
