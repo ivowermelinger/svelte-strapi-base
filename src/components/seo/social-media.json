@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_seo_social_medias",
+  "info": {
+    "displayName": "Social Media",
+    "icon": "external-link-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "linkedin"
+      ],
+      "required": true
+    }
+  }
+}

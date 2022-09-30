@@ -34,5 +34,4 @@
     </div>
   </div>
 
-  <ProjectGrid data="{data}"/>
 {/if}

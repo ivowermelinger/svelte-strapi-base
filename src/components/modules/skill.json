@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_modules_skills",
+  "info": {
+    "displayName": "Skill",
+    "icon": "dragon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "percentage": {
+      "type": "integer",
+      "max": 100,
+      "required": true,
+      "min": 0
+    }
+  }
+}

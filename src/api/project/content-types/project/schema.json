@@ -4,7 +4,7 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Projekt",
+    "displayName": "Projekte",
     "description": ""
   },
   "options": {
@@ -30,7 +30,7 @@
       "repeatable": false,
       "component": "seo.meta-data"
     },
-    "tags": {
+    "tags_old": {
       "type": "string"
     },
     "previewImage": {
